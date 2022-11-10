@@ -1,0 +1,129 @@
+body{
+    overflow-x: hidden;
+}
+
+#intro {
+  height: 75vh;
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#intro:before {
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background: rgba(138, 43, 226, 1) url("../assets/img/contact-bg.jpg") center
+    center/cover no-repeat;
+  z-index: -1;
+  background-blend-mode: darken;
+}
+
+/* Contact Info */
+
+#info-title h1 {
+  text-transform: uppercase;
+  text-align: center;
+  padding: 2rem;
+  color: blueviolet;
+}
+
+#cinfo-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#cinfo-row .cinfo-cols {
+  margin: 1.2rem;
+  width: 372px;
+}
+
+#info-col-2 .col-items {
+  display: flex;
+  align-items: center;
+  margin: 1rem;
+}
+
+#info-col-2 .col-items span {
+  font-size: 1.4rem;
+}
+
+/* Message */
+
+#msg{
+  background-color: blueviolet;
+}
+
+.form-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#msg-row{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#msg-row .msg-cols img{
+    width: 100%;
+    border-radius: 1rem;
+}
+
+#msg-row .msg-cols{
+    width: 374px;
+    margin: 1rem;
+}
+
+.form-container form {
+  width: 372px;
+}
+
+form .form-controls {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+form .form-controls label{
+  color: #fff;
+}
+
+form .form-controls input,
+form .form-controls textarea {
+  outline: none;
+  border: 2px solid blueviolet;
+  padding: 14px;
+  border-radius: 4px;
+}
+
+
+form .form-controls input {
+  height: 42px;
+}
+
+form .form-controls #submit-btn{
+    height: 100%;
+    margin: 10px 0;
+    text-transform: uppercase;
+    color: blueviolet;
+    font-weight: 600;
+}
+
+form .form-controls #submit-btn :hover{
+  background-color: rgb(138, 43, 226);
+  color: rgb(255, 255, 255);
+}
+
+@media only screen and(max-width:395px) {
+    .form-container form {
+        width: 275px;
+      }
+}

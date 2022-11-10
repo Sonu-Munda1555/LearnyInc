@@ -1,0 +1,206 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+/* Header */
+
+body {
+  font-family: poppins, sans-serif;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+ul {
+  margin: 0;
+}
+
+header {
+  height: 74px !important;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 0px 14px 0px rgb(105, 105, 105);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  overflow: hidden;
+  background-color: rgb(255, 255, 255);
+}
+
+header .container-xxl {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Brand */
+
+.brand-container {
+  display: flex;
+  align-items: center;
+  color: blueviolet;
+}
+
+.brand img {
+  height: 75px;
+  padding: 5px;
+}
+
+/* Navbar / Sidebar */
+
+nav {
+  display: flex;
+  overflow: hidden;
+  transition: all 0.4s ease-out;
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+}
+
+.nav-list {
+  display: flex;
+  list-style: none;
+  margin: 0px 32px;
+}
+
+.nav-list .list-items a {
+  padding: 10px;
+  margin: 0px 4px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: blueviolet;
+  border-bottom: 2px solid white;
+  transition: all 0.1s ease-in-out;
+}
+
+.nav-list .list-items a:hover,
+.nav-list .list-items .active {
+  border-bottom: 2px solid rgb(153, 0, 255);
+}
+
+.nav-list .hidden-items {
+  display: none;
+}
+
+/*  Header Button */
+
+.header-btn {
+  outline: none;
+  border: none;
+  text-transform: uppercase;
+  background-color: transparent;
+  overflow: hidden;
+ 
+}
+
+
+
+.header-btn a {
+  padding: 10px 38px;
+  text-decoration: none;
+  color: blueviolet;
+  display: block;
+  letter-spacing: 2px;
+  border: 2px solid blueviolet;
+  border-radius: 6px;
+  transition: all 0.4s ease-in-out;
+}
+
+.header-btn a:hover {
+    background-color: blueviolet;
+    color: white;
+  }
+
+/* Menubar / Hamburgur */
+
+.menu-bar {
+  display: none;
+  border-radius: 10px;
+  padding: 0px 30px;
+}
+
+.menu-bar .bar-container {
+  display: inline-block;
+  cursor: pointer;
+  padding: 5px 10px;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+  width: 32px;
+  height: 5px;
+  background-color: blueviolet;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  transform: translate(0, 11px) rotate(-45deg);
+}
+
+.change .bar2 {
+  opacity: 0;
+}
+
+.change .bar3 {
+  transform: translate(0, -11px) rotate(45deg);
+}
+
+.wrapper {
+  width: 99%;
+}
+
+@media only screen and (max-width: 1080px) {
+  #sidebar {
+    position: fixed;
+    top: 76px;
+    width: 100%;
+    left: 0;
+    background-color: white;
+    max-height: 0vh;
+    flex-direction: column;
+  }
+
+  .nav-container {
+    border-top: 4px solid blueviolet;
+    border-bottom: 4px solid blueviolet;
+  }
+
+  .nav-container .nav-list {
+    width: 100%;
+    margin: 10px 0px;
+    flex-direction: column;
+  }
+
+  .nav-list .list-items {
+    margin: 10px 0px;
+    display: block;
+  }
+
+  .nav-list .list-items a {
+    display: block;
+  }
+
+  .nav-list .list-items a:hover,
+  .nav-list .list-items .active {
+    background-color: rgb(255, 239, 239);
+  }
+
+  .nav-list .hidden-items {
+    display: block;
+  }
+
+  .menu-bar {
+    display: block;
+  }
+
+  .header-btn {
+    display: none;
+  }
+}

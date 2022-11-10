@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="icon.svg" type="image/x-icon">
+
+    <title>Learny Inc</title>
+
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="./style/CoursesVideos.css">
+
+    <?php include './cdnLinks.php'; ?>
+
+</head>
+
+<body>
+    <?php include './components/Navbar.php'; ?>
+
+    <section class="course-wrapper">
+        <div class="container-xl">
+            <div class="video-wrapper">
+               
+            </div>
+
+            <div class="video-desc">
+
+                <div class="video-title">
+                    <h4 class="pt-3">Complete HTML and CSS Course</h4>
+                </div>
+
+                <h6 class="py-1">In this full course, we learn about complete JavaScript.</h6>
+
+                <div class="time-stamp">
+                    Lessons:
+                    
+                   
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <?php include './components/Footer.php'; ?>
+</body>
+
+</html>

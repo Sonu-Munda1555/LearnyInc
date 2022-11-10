@@ -1,0 +1,82 @@
+
+#intro {
+  position: relative;
+  height: 75vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  transition: all 0.4s ease-in-out;
+  animation: slider 18s ease-in-out infinite;
+  background-blend-mode: overlay;
+  z-index: -1;
+  overflow: hidden;
+}
+
+@keyframes slider {
+  0% {
+    background: rgba(0, 0, 0, 0.8) url(../assets/img/about-bg1.jpg) center
+      center/cover no-repeat;
+  }
+  50% {
+    background: rgba(0, 0, 0, 0.8) url(../assets/img/about-bg2.jpg) center
+      center/cover no-repeat;
+  }
+  100% {
+    background: rgba(0, 0, 0, 0.8) url(../assets/img/about-bg3.jpg) center
+      center/cover no-repeat;
+  }
+}
+
+
+/* Team */
+#team{
+    background-color: rgb(202, 202, 202);
+}
+
+#team-row{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+#team-row .team-cols{
+    background-color: rgb(255, 255, 255);
+    width: 372px;
+    margin: 10px;
+    cursor: default;
+    transition: all 0.4s ease-in-out;
+    box-shadow: 1px 1px 10px 2px blueviolet;
+}
+
+#team-row .team-cols:hover{
+    background-color: blueviolet;
+    color: white;
+}
+
+#team-row .profile-img img{
+width: 360px;
+padding: 2rem;
+}
+
+
+/* Supporters */
+#supporters {
+    margin: 1rem;
+    background-color: rgb(188 30 30 / 12%);
+  }
+  
+  #sptrs {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  #sptrs img {
+    width: 18%;
+    margin: 10px;
+  }
+  

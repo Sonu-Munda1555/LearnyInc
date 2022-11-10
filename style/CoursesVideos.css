@@ -1,0 +1,49 @@
+.course-wrapper{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #212121;
+    color: white;
+}
+
+.course-wrapper .container-xl{
+    padding-bottom: 3rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.video-wrapper{
+    margin-top: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 75vh;
+    width: 96%;
+}
+
+iframe{
+   height: 100%;
+   width: 100%;
+}
+
+.video-desc{
+    width: 96%;
+}
+
+/* Media Queries */
+
+@media only screen and (max-width:720px){
+    .video-wrapper{
+        height: 55vh;
+    }
+}
+
+@media only screen and (max-width:574px){
+    .video-wrapper{
+        height: 42vh;
+    }
+}

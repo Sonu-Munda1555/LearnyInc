@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+/* Intro */
+
+#intro {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#intro::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5) url("../assets/img/HomeIntro.jpg") center
+    center/cover no-repeat;
+  background-blend-mode: darken;
+  z-index: -1;
+}
+
+#reg-btn {
+  margin: 18px;
+  background-color: rgb(226, 43, 43);
+  border: none;
+  font-weight: bold;
+  outline: none;
+  box-shadow: 0px 0px 4px rgb(255, 255, 255);
+  border-radius: 10px;
+  transition: all 1s ease-in-out;
+}
+#reg-btn :hover {
+  border-radius: 10px;
+  box-shadow: 0px 0px 14px rgb(255, 255, 255);
+}
+#reg-btn a {
+  text-transform: uppercase;
+  color: white;
+  padding: 16px;
+}
+
+/* About Desc */
+
+#about-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#about-row .cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  margin: 2%;
+}
+
+#about-row #card-1 {
+  width: 35%;
+}
+
+#about-row #card-2 {
+  width: 60%;
+}
+
+/* Featured Courses */
+#featured-courses .rows {
+  margin: 2rem 0;
+}
+
+#featured-courses .inner-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#featured-courses .inner-row .cols img {
+  height: 264px;
+  transition: all 0.6s;
+}
+
+#featured-courses .rows .inner-row .cols h2 {
+  padding: 1rem;
+}
+
+#featured-courses .inner-row .cols img:hover {
+  transform: scale(1.1);
+}
+
+/* Supporters */
+#supporters {
+  margin: 1rem;
+  background-color: rgb(188 30 30 / 12%);
+}
+
+#sptrs {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+#sptrs img {
+  width: 18%;
+  margin: 10px;
+}
+
+@media only screen and (max-width: 1224px) {
+  #about-row {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #about-row #card-1 {
+    width: 100%;
+  }
+
+  #about-row #card-2 {
+    width: 100%;
+  }
+}
